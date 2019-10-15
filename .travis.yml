@@ -14,3 +14,8 @@ before_install:
 script:
   - npm run build
   - npm run test
+
+deploy:
+  provider: script
+  script: bash scripts/deploy.sh
+  skip_cleanup: true
