@@ -4,12 +4,12 @@ node_js:
 
 cache: npm
 
-install:
-  - npm install
-
 before_install:
   - "npm config set spin false"
   - npm i -g now
+
+install:
+  - npm install
 
 script:
   - npm run build
